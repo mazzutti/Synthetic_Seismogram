@@ -72,6 +72,17 @@ The `create_venv_and_install.py` script will install the required packages liste
 	- In the top-right of the notebook editor, use the kernel selector to choose the Python interpreter from the `.venv` you created.
 	- Run cells using the run buttons or `Run All` to execute the notebook.
 
+6.a Debugging and setting breakpoints inside notebook cells
+	- Ensure the Python extension is installed and the notebook kernel is set to the `.venv` interpreter.
+	- To set a breakpoint: open the code cell, click in the left gutter next to the line where you want execution to stop. A red dot indicates the breakpoint.
+	- Start a debugging session for a cell by clicking the cell's "Debug Cell" button (the debug/butterfly icon) or right-click the cell and choose `Debug Cell`.
+	- Use the Debug toolbar (Step Over / Step Into / Continue / Restart / Stop) and the Debug Console to inspect variables and walk through execution.
+	- Alternatively, use "Run by Line" for quick step-through execution without breakpoints (click the Run By Line icon in the cell toolbar).
+	- If you prefer an inline approach, add `import pdb; pdb.set_trace()` inside a cell — execution will drop to the debugger when that line runs (useful when remote debugging or the VS Code UI isn't available).
+	- Notes:
+	  - Debugging support depends on the Python extension and the selected kernel; if the debug buttons do not appear, update the extension and ensure the kernel is an interpreter from a local environment (not a remote kernel).
+	  - You can also right-click a notebook cell and choose `Run Current Cell in Interactive Window`, then use the Interactive Window's debug controls.
+
 Notes
 - If PowerShell blocks script execution, run `Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned` in an elevated PowerShell first.
 - If you prefer conda, create and activate a conda env and then select its interpreter in VS Code instead of `.venv`.
