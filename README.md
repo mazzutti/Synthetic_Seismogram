@@ -24,7 +24,7 @@ Follow these steps to set up and run the project on Windows using Visual Studio 
 Open a terminal (PowerShell or Command Prompt) and run:
 
 ```powershell
-git clone [https://github.com/mazzutti/Synthetic_Seismogram.git](https://github.com/mazzutti/Synthetic_Seismogram.git)
+git clone https://github.com/mazzutti/Synthetic_Seismogram.git
 cd Synthetic_Seismogram
 ```
 
