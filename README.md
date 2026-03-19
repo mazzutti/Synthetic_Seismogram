@@ -93,20 +93,20 @@ conda create -n synthetic_seis python=3.10 -y
 conda activate synthetic_seis
 ```
 
-  - Install project requirements inside the conda env. Two common options:
+- Install project requirements inside the conda env. Two common options:
 
-    1. Install using `pip` from the provided `requirements.txt`:
+1. Install using `pip` from the provided `requirements.txt`:
 
 ```powershell
 pip install -r requirements.txt
 ```
 
-    2. Prefer conda packages where available (faster, binary builds), then fall back to `pip`:
+2. Prefer conda packages where available (faster, binary builds), then fall back to `pip`:
 
 ```powershell
 conda install numpy scipy matplotlib -y   # install common packages via conda
 pip install -r requirements.txt          # install remaining packages via pip
 ```
 
-  - After installing, open VS Code and use `Python: Select Interpreter` to choose the conda environment's interpreter (it will show as `conda: synthetic_seis` or point to the env path).
+- After installing, open VS Code and use `Python: Select Interpreter` to choose the conda environment's interpreter (it will show as `conda: synthetic_seis` or point to the env path).
 
