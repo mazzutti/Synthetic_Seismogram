@@ -1,0 +1,9 @@
+welly
+numpy
+matplotlib
+scipy
+jupyter
+ipykernel
+lasio
+pandas
+setuptools<70.0.0
